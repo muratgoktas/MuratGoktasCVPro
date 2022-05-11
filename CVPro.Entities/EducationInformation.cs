@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CVPro.Entities
 {
-    public class EducationInformation:IEntity
+    public class EducationInformation : IEntity
     {
         public int Id { get; set; }
         public int PersonId { get; set; }

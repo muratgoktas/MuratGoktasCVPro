@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CVPro.Bll\CVPro.Bll.csproj" />
+    <ProjectReference Include="..\CVPro.Dal\CVPro.Dal.csproj" />
+    <ProjectReference Include="..\CVPro.Interfaces\CVPro.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

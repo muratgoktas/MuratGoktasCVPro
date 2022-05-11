@@ -15,15 +15,18 @@ namespace CVPro.Bll.Concrete
         // Validation
         // Expresion Handling
         // Security
-        private IEducationInformationDal _educattionDal;
+        private IEducationInformationDal  _educattionDal;
         public  EducationInformationManager(IEducationInformationDal educationDal)
         {
             _educattionDal = educationDal;
         }
         public void Add(EducationInformation education)
         {
+
             _educattionDal.Add(education);
         }
+        
+            
 
         public void Delete(int Id)
         {
@@ -37,6 +40,7 @@ namespace CVPro.Bll.Concrete
 
         public List<EducationInformation> GetAll()
         {
+
             return _educattionDal.GetAll();
         }
 

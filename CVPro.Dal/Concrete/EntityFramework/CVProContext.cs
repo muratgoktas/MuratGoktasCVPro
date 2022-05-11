@@ -12,6 +12,7 @@ namespace CVPro.Dal.Concrete.EntityFramework
     {
         
         public DbSet<EducationInformation> EducationInformations { get; set; }
+        public DbSet<PersonInformation> PersonInformations { get; set; }
 
     }
 }
