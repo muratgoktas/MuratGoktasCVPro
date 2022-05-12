@@ -11,31 +11,33 @@ namespace CVPro.Dal.Concrete.EntityFramework
     public class EfPersonalDal : IPersonelInformationDal
     {
         CVProContext _context = new CVProContext();
+        
         public void Add(PersonInformation person)
         {
-            _context.PersonInformations.Add(person);
+            _context.PersonalInformations.Add(person);
             _context.SaveChanges();
         }
 
+
         public void Delete(int id)
         {
-            _context.PersonInformations.Remove(_context.PersonInformations.FirstOrDefault(p => p.Id == id));
+            _context.PersonalInformations.Remove(_context.PersonalInformations.FirstOrDefault(p => p.Id == id));
             _context.SaveChanges();
         }
 
         public PersonInformation Get(int id)
         {
-            return _context.PersonInformations.FirstOrDefault(p => p.Id == id);
+            return _context.PersonalInformations.FirstOrDefault(p => p.Id == id);
         }
 
         public List<PersonInformation> GetAll()
         {
-            return _context.PersonInformations.ToList();
+            return _context.PersonalInformations.ToList();
         }
 
         public void Update(PersonInformation person)
         {
-            PersonInformation personInformation = _context.PersonInformations.FirstOrDefault(p => p.Id == person.Id);
+            PersonInformation personInformation = _context.PersonalInformations.FirstOrDefault(p => p.Id == person.Id);
             personInformation.Name = person.Name;
             personInformation.LastName = person.LastName;
             personInformation.MiddleName = person.MiddleName;

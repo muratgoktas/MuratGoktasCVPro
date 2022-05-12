@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace CVPro.WpfLibrary.Concrete
 {
-    public class PersonalInformationService : IPersonelInformationService
+    public class PersonalInformationService : IPersonalInformationService
     {
         PersonelInformationManager _personalManager =
             new PersonelInformationManager(new EfPersonalDal());

@@ -1,10 +1,5 @@
 ﻿using CVPro.Entities;
-using System;
-using System.Collections.Generic;
 using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CVPro.Dal.Concrete.EntityFramework
 {
@@ -12,7 +7,7 @@ namespace CVPro.Dal.Concrete.EntityFramework
     {
         
         public DbSet<EducationInformation> EducationInformations { get; set; }
-        public DbSet<PersonInformation> PersonInformations { get; set; }
+        public DbSet<PersonInformation> PersonalInformations { get; set; }
 
     }
 }

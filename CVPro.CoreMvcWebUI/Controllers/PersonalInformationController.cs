@@ -11,7 +11,7 @@ namespace CVPro.CoreMvcWebUI.Controllers
 {
 
    
-    public class PersonalInformationController1 : Controller
+    public class PersonalInformationController : Controller
     {
         PersonelInformationManager _personelManager = new PersonelInformationManager(new EfPersonalDal());
         public ViewResult Index()

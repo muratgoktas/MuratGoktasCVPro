@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CVPro.Bll.Concrete
 {
-    public class PersonelInformationManager : IPersonelInformationService
+    public class PersonelInformationManager : IPersonalInformationService
     {
         private IPersonelInformationDal _personelInformationDal;
         public PersonelInformationManager(IPersonelInformationDal personelInformationDal)

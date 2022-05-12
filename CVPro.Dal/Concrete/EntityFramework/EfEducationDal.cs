@@ -10,13 +10,9 @@ namespace CVPro.Dal.Concrete.EntityFramework
 {
     public class EfEducationDal : IEducationInformationDal
     {
-        private CVProContext _context = new CVProContext();
+        private CVProContext _context = new();
 
-        public EfEducationDal(CVProContext context)
-        {
-            _context = context;
-        }
-
+       
         public void Add(EducationInformation education)
         {
             _context.EducationInformations.Add(education);

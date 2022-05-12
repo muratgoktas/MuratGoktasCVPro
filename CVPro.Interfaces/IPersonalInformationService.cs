@@ -9,7 +9,7 @@ using CVPro.Entities;
 namespace CVPro.Interfaces
 {
     [ServiceContract]
-    public interface IPersonelInformationService
+    public interface IPersonalInformationService
     {
         [OperationContract]
         List<PersonInformation> GetAll();
